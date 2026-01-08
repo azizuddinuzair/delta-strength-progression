@@ -1,0 +1,4 @@
+"""
+Specifies files/folders to ignore in Git (e.g., /users/*, __pycache__, .env)
+Ensures sensitive or large files are not committed.
+"""

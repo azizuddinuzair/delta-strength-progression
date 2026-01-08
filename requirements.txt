@@ -1,0 +1,4 @@
+"""
+List of Python dependencies required to run the project.
+Includes ML libraries, GUI packages, and utility libraries.
+"""
