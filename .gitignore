@@ -140,6 +140,15 @@ data/auth/*.db
 !data/auth/.gitkeep
 
 ################################################################################
+# USER DATA (Privacy & Security - exclude from repo)
+################################################################################
+# Ignore all user directories by default
+users/
+# Exception: Keep User2 test/demo fixture for testing and CI/CD
+!users/User2/
+!users/User2/**
+
+################################################################################
 # DEVELOPMENT & TEMPORARY
 ################################################################################
 .local/
