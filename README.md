@@ -48,7 +48,7 @@ Tree-based models (XGBoost, Random Forest) were evaluated on 30–50 session val
 - **Show calibration coefficients** (before/after adjustments for each lift).
 
 **Deployed On Streamlit Community Cloud**
-Visit at: [Personalized Load Recommendations via Effective Load Delta]()
+Visit at: [Personalized Load Recommendations via Effective Load Delta](https://delta-sequential-recommender-9stgzpqzfmbekqz26hsltq.streamlit.app/)
 
 **Run locally:**
 ```bash
