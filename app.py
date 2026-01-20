@@ -45,6 +45,12 @@ st.markdown(
 with st.sidebar:
     st.header("Session Setup")
     compound = st.radio("Select Compound", ["squat", "bench_press", "lat_pulldown", "seated_row"])
+    st.markdown("---")
+    st.markdown("<div style='text-align: center; margin-top: 2em;'>"
+                "<a href='https://github.com/azizuddinuzair/delta-strength-progression' target='_blank' style='text-decoration: none;'>"
+                "<span style='display:inline-block;padding:0.5em 1.2em;background:#f5f5f5;border:1px solid #ddd;border-radius:6px;color:#222;font-size:1em;cursor:pointer;'>"
+                "View Repo"
+                "</span></a></div>", unsafe_allow_html=True)
 
 # ===== LOAD DEMO DATA =====
 csv_path = DEMO_USER_PATH / f"demo_user_{compound}_history.csv"
@@ -220,3 +226,4 @@ st.caption(
     f"{len(history)} sessions with "
     f"avg Δ = {history['load_delta'].mean():.1f} lb/session."
 )
+
