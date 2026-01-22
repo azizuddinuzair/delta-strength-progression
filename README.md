@@ -18,7 +18,7 @@ Built personalization on top of scattered user data:
 - **Train separate models per compound lift** (squat, bench, row, etc.) on ~11k cross-user historical sessions, capturing lift-specific progression patterns.
 - **Personalize via calibration**: adjust raw predictions to each user using their recent sessions (`adjusted = a × prediction + b`). The model learns individual pace within 8–10 logged sessions per compound.
 - **Validate aggressively**: use cross-validation before deployment. Treat negative or volatile CV scores as a hard stop—route predictions to deterministic logic instead of forcing ML output.
-- **Serve predictions** only when we have 15+ sessions per compound (otherwise pure rule-based). Update calibration incrementally as new data arrives.
+- **Give predictions** only when we have 15+ sessions per compound (otherwise pure rule-based). Update calibration incrementally as new data arrives.
 
 ## Modeling & Validation
 
